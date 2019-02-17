@@ -3,18 +3,6 @@
 # title:   Binary Search Trees in Python
 # author:  Nura Kawa
 # date:    02.03.2019
-# summary: This file implements BST, Queue, and four tree traversal functions.
-#          Currently the tree traversal functions only work if the input is a 
-#          tree root. 
-#
-#          For example, to print all nodes of a tree in order I must 
-#          run > InOrderTraversal(tree.root)
-#          I want to be able to run > InOrderTraversal(tree)
-#
-#          What must I change in either the implementation of the BST or the
-#          implementation of the traversal functions in order for this to work?
-#          
-#          THANK YOU!
 # =============================================================================
 
 
@@ -194,34 +182,3 @@ class BST(Node):
 				q.enqueue(node.left)
 			if node.right is not None:
 				q.enqueue(node.right)
-
-
-
-# Tests
-# -----------------------------------------------------------------------------
-
-# example is taken directly from coursera slides
-
-example = BST()
-for name in ["Les", "Cathy", "Sam", "Alex", "Frank", "Nancy", "Violet", 
-"Tony", "Wendy"]: example.insert(name)
-
-
-print("\n----Size----\n")
-print(example.size())
-
-print("\n----Height----\n")
-print(example.height())
-
-print("\n----InOrderTraversal----\n")
-example.InOrderTraversal()
-
-print("\n----PreOrderTraversal----\n")
-example.PreOrderTraversal()
-
-print("\n----PostOrderTraversal----\n")
-example.PostOrderTraversal()
-
-print("\n----LevelTraversal----\n")
-example.LevelTraversal()	
-
