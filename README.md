@@ -1,2 +1,4 @@
 # data-structures
-Implementation of data structures in python
+_Implementation of data structures in python_
+
+bst.py Binary Search Trees and traversal methods
